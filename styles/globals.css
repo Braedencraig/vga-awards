@@ -14,3 +14,301 @@ a {
 * {
   box-sizing: border-box;
 }
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: CharoeMed;
+  src: url("../public/Charoe-Medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: CharoeBold;
+  font-weight: bold;
+  src: url("../public/Charoe-Bold.otf") format("opentype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  background: black;
+}
+
+h1 {
+  display: none;
+}
+
+.slick-next:before,
+.slick-prev:before {
+  opacity: 0;
+}
+
+h2 {
+  color: white;
+  font-family: CharoeBold;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  /* width: 50%; */
+  cursor: default;
+  margin-bottom: 50px;
+}
+
+.nominees h2 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.lastyear {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.lastyear iframe {
+  width: 900px;
+}
+
+.lastyear div {
+  margin-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.person img {
+  border-radius: 50px;
+  border: 10px solid #ff5769 !important;
+}
+
+.person p {
+  color: white;
+  font-family: CharoeMed;
+  width: 80%;
+  text-align: center;
+}
+
+.person .socials i {
+  margin-top: 0;
+}
+
+.presenters {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 60px;
+}
+
+.host-container {
+  width: 66%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nominees {
+  margin-bottom: 80px;
+}
+
+h3 {
+  color: white;
+  font-family: CharoeMed;
+  text-align: center;
+  margin: 0 auto;
+  /* width: 50%; */
+  cursor: default;
+}
+
+a {
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ff5769;
+}
+
+.logo {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 75px;
+  animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  /* Firefox */
+  -webkit-animation: fadein 2s;
+  /* Safari and Chrome */
+  -o-animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.socials {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.socials i {
+  font-size: 40px;
+  margin: 10px;
+  color: white;
+  transition: all 0.4s;
+  margin-top: 60px;
+}
+
+.socials i:hover {
+  color: #ff5769;
+}
+
+.additional-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.ablegamers span {
+  margin-left: 10px !important;
+  top: 30px !important;
+}
+
+.ablegamers h3 {
+  width: 80%;
+}
+
+.ablegamers h2 {
+  margin-top: 80px;
+}
+
+.additional-details img {
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .host-container {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .host-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .host-container {
+    width: 100%;
+  }
+  .lastyear iframe {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .person {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  .nominee {
+    display: flex;
+    justify-content: center;
+  }
+
+  .lastyear iframe {
+    width: 500px;
+  }
+
+  .person {
+    width: 80%;
+  }
+
+  .ablegamers h3 {
+    width: 100%;
+  }
+
+  .presenters {
+    margin-top: 50px;
+  }
+
+  .person p {
+    width: 100%;
+  }
+}
