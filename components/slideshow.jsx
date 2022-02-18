@@ -41,9 +41,9 @@ export default function AutoPlay() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     speed: 4500,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 4500,
     cssEase: "ease-in-out",
     responsive: [
       {
