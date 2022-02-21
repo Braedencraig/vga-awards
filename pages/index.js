@@ -1,17 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Image from "next/image";
 import Slideshow from "../components/slideshow";
 import { Person } from "../components/person";
 import YouTube from "react-youtube";
 import styles from "../styles/Home.module.css";
-import vgaLogo from "../public/logo.png";
+// import vgaLogo from "../public/logo.png";
 import rgtLogo from "../public/rgt.png";
-import alanah from "../public/alanah.jpg";
+// import alanah from "../public/alanah.jpg";
 import steve from "../public/steve.jpg";
-import jack from "../public/jack.png";
-import crank from "../public/crank.jpg";
-import lupo from "../public/lupo.png";
-import anita from "../public/anita.jpg";
+// import jack from "../public/jack.png";
+// import crank from "../public/crank.jpg";
+// import lupo from "../public/lupo.png";
+// import anita from "../public/anita.jpg";
 import ablegamers from "../public/ablegamers.webp";
 
 export default function Home() {
@@ -34,13 +35,14 @@ export default function Home() {
       </Head>
       <div className="container">
         <div className="logo">
-          <Image
+          <img src="/logo.png" alt="Video Game Accessibility Awards"/>
+          {/* <Image
             width={800}
             height={800}
             src={vgaLogo}
             priority={true}
             alt="Video Game Accessibility Awards"
-          />
+          /> */}
         </div>
         <h1>Video Game Accessibility Awards</h1>
         <h2>Livestream on March 12, 2022</h2>
@@ -92,7 +94,7 @@ export default function Home() {
               twitter: "https://twitter.com/charalanahzard",
             }}
             bio={`Alanah is a Youtuber, Twitch streamer, and video game writer at Sony's Santa Monica Studio.`}
-            image={alanah}
+            image={'/alanah.jpg'}
           />
           <Person
             name={"Steve Spohn"}
@@ -102,7 +104,7 @@ export default function Home() {
                 "https://twitter.com/stevenspohn?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
             }}
             bio={`Steve is the Senior Director of AbleGamers.`}
-            image={steve}
+            image={'/steve.jpg'}
           />
         </div>
       </div>
@@ -118,7 +120,7 @@ export default function Home() {
               twitter:
                 "https://twitter.com/Jacksepticeye?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
             }}
-            image={jack}
+            image={'/jack.png'}
           />
           <Person
             name={"Crankgameplays"}
@@ -127,7 +129,7 @@ export default function Home() {
               twitter: "https://twitter.com/CrankGameplays",
               instagram: "https://www.instagram.com/crankgameplays/",
             }}
-            image={crank}
+            image={'/crank.jpg'}
           />
           <Person
             name={"Dr. Lupo"}
@@ -136,7 +138,7 @@ export default function Home() {
               youtube: "https://www.youtube.com/c/DrLupo",
               twitter: "https://twitter.com/DrLupo",
             }}
-            image={lupo}
+            image={'/lupo.png'}
           />
           <Person
             name={"Sweet Anita"}
@@ -147,7 +149,7 @@ export default function Home() {
               twitter:
                 "https://twitter.com/sweetanita?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
             }}
-            image={anita}
+            image={'/anita.jpg'}
           />
         </div>
         <div className="ablegamers">
@@ -176,8 +178,8 @@ export default function Home() {
           rel="noreferrer"
         >
           <Image
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             src={rgtLogo}
             alt="Real Good Touring"
           />

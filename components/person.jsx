@@ -1,12 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Image from "next/image";
 
 export const Person = ({ name, bio, socials, image }) => {
   return (
     <div className="person">
-      <Image width={400} height={350} priority={true} alt={name} src={image} />
+      <img alt={name} src={image} />
+      {/* <Image width={400} height={350} priority={true} alt={name} src={image} /> */}
       <p className="text">{name}</p>
-      {bio && <p className="bio">{bio}</p> }
       <div className="socials person-socials">
         {socials.instagram && (
           <a href={socials.instagram} target="_blank" rel="noopener noreferrer">
@@ -50,6 +51,7 @@ export const Person = ({ name, bio, socials, image }) => {
           </a>
         )}
       </div>
+      {bio && <p className="bio">{bio}</p> }
     </div>
   );
 };
