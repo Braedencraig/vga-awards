@@ -5,12 +5,25 @@ import Image from "next/image";
 export const Person = ({ name, bio, socials, image }) => {
   return (
     <div className="person">
-      <img alt={name} src={image} />
-      {/* <Image width={400} height={350} priority={true} alt={name} src={image} /> */}
+      <div
+        style={{
+          width: 400,
+          height: 400,
+          position: "relative",
+        }}
+      >
+        <Image alt={name} src={image} layout="fill" objectFit="contain" />
+      </div>
+      {/* <img alt={name} src={image} /> */}
       <p className="text">{name}</p>
       <div className="socials person-socials">
         {socials.instagram && (
-          <a href={socials.instagram} target="_blank" rel="noopener noreferrer">
+          <a
+            href={socials.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="instagram"
+          >
             <i className="fab fa-instagram fa-2x"></i>
           </a>
         )}
@@ -19,6 +32,7 @@ export const Person = ({ name, bio, socials, image }) => {
             href={socials.twitter}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="twitter"
           >
             <i className="fab fa-twitter fa-2x"></i>
           </a>
@@ -28,6 +42,7 @@ export const Person = ({ name, bio, socials, image }) => {
             href={socials.twitch}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="twitch"
           >
             <i className="fab fa-twitch fa-2x"></i>
           </a>
@@ -37,21 +52,23 @@ export const Person = ({ name, bio, socials, image }) => {
             href={socials.youtube}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="youtube"
           >
             <i className="fab fa-youtube fa-2x"></i>
           </a>
         )}
-         {socials.website && (
+        {socials.website && (
           <a
             href={socials.website}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="website"
           >
             <i className="fa-solid fa-desktop fa-2x"></i>
           </a>
         )}
       </div>
-      {bio && <p className="bio">{bio}</p> }
+      {bio && <p className="bio">{bio}</p>}
     </div>
   );
 };

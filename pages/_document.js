@@ -2,9 +2,9 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head>
-      <meta charSet="utf-8" />
+        <meta charSet="utf-8" />
         <meta name="description" content="Video Game Accessibility Awards" />
         <meta property="og:title" content="Video Game Accessibility Awards" />
         <meta
@@ -25,9 +25,17 @@ export default function Document() {
         <meta name="twitter:image" content="http://vgaawards.com//logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="true"
+        />
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -36,11 +44,6 @@ export default function Document() {
           referrerPolicy="no-referrer"
         />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-          rel="stylesheet"
-          crossOrigin="true"
-        />
       </Head>
       <body>
         <Main />
