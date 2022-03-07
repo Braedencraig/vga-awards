@@ -5,14 +5,7 @@ import Slideshow from "../components/slideshow";
 import { Person } from "../components/person";
 import YouTube from "react-youtube";
 import styles from "../styles/Home.module.css";
-// import vgaLogo from "../public/logo.png";
 import rgtLogo from "../public/rgt.png";
-// import alanah from "../public/alanah.jpg";
-import steve from "../public/steve.jpg";
-// import jack from "../public/jack.png";
-// import crank from "../public/crank.jpg";
-// import lupo from "../public/lupo.png";
-// import anita from "../public/anita.jpg";
 import ablegamers from "../public/ablegamers.webp";
 
 export default function Home() {
@@ -36,13 +29,6 @@ export default function Home() {
       <div className="container">
         <div className="logo">
           <img src="/logo.png" alt="Video Game Accessibility Awards" />
-          {/* <Image
-            width={800}
-            height={800}
-            src={vgaLogo}
-            priority={true}
-            alt="Video Game Accessibility Awards"
-          /> */}
         </div>
         <h1>Video Game Accessibility Awards</h1>
         <h2>Livestream on March 12, 2022</h2>
@@ -77,7 +63,7 @@ export default function Home() {
           </a>
         </div>
       </div>
-      {/* <Slideshow /> */}
+      <Slideshow />
       <div className="lastyear">
         <h2>Last Year’s Show </h2>
         <YouTube videoId={"WXcnVqmXG3E"} />

@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Person = ({ name, bio, socials, image }) => {
   return (
     <div className="person">
-      <div
+      {/* <div
         style={{
           width: 400,
           height: 400,
@@ -13,8 +13,8 @@ export const Person = ({ name, bio, socials, image }) => {
         }}
       >
         <Image alt={name} src={image} layout="fill" objectFit="contain" />
-      </div>
-      {/* <img alt={name} src={image} /> */}
+      </div> */}
+      <img alt={name} src={image} />
       <p className="text">{name}</p>
       <div className="socials person-socials">
         {socials.instagram && (
