@@ -270,7 +270,7 @@ export default function Home() {
           <h3>
             We’re working with
             <Image
-              width={200}
+              width={250}
               height={100}
               src={ablegamers}
               alt="able gamers logo"
