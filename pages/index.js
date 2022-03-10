@@ -270,6 +270,7 @@ export default function Home() {
           <h3>
             We’re working with
             <Image
+              priority={true}
               width={250}
               height={100}
               src={ablegamers}
@@ -292,6 +293,7 @@ export default function Home() {
           rel="noreferrer"
         >
           <Image
+            priority={true}
             width={150}
             height={150}
             src={rgtLogo}

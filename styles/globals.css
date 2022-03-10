@@ -93,7 +93,7 @@ h2 {
 
 .lastyear {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .lastyear iframe {
@@ -137,7 +137,7 @@ h2 {
 }
 
 .presenters {
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom: 50px;
 }
 
@@ -158,7 +158,7 @@ h2 {
 }
 
 .nominees {
-    margin-bottom: 80px;
+    margin-bottom: 80px !important;
 }
 
 h3 {
@@ -339,6 +339,7 @@ a:hover {
     }
     .person {
         width: 82%;
+        margin-bottom: 30px;
     }
     .ablegamers h3 {
         width: 100%;
